@@ -1,14 +1,23 @@
 {
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
+    "dev": "run-p dev:**",
+    "dev:prestart": "npm run tailwind:dev",
+    "dev:start": "snowpack dev --polyfill-node",
+    "tailwind:dev": "tailwindcss build src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
+    "tailwind:build": "cross-env NODE_ENV=production postcss src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
+    "build": "snowpack build --polyfill-node",
     "test": "web-test-runner \"src/**/*.test.jsx\"",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
+    "@tailwindcss/ui": "0.7.2",
+    "latest": "0.2.0",
+    "npm-run-all": "4.1.5",
+    "postcss-cli": "8.2.0",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "tailwindcss": "1.9.6"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.4",
@@ -18,6 +27,8 @@
     "@web/test-runner": "^0.9.7",
     "chai": "^4.2.0",
     "prettier": "^2.0.5",
-    "snowpack": "^2.17.0"
+    "snowpack": "^2.17.0",
+    "autoprefixer": "10.0.1",
+    "postcss": "8.1.6"
   }
 }
