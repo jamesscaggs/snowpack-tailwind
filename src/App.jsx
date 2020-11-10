@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './assets/css/tailwind.css';
+import React, { useState, useEffect } from "react";
+import "./assets/css/tailwind.css";
 
 function App() {
   // Create the count state.
