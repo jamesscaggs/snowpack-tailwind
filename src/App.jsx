@@ -7,7 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="text-blue-900">Testing Snowpack!XX!!!</h1>
-        <Button>Test</Button>
+        <Button text="Testing" type="submit" loading="false">
+          Testing 123
+        </Button>
       </header>
     </div>
   );
