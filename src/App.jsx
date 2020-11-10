@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import Button from "./components/common/Button";
 import "./assets/css/tailwind.css";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="text-blue-900">Testing Snowpack!XX!!!</h1>
+        <Button>Test</Button>
       </header>
     </div>
   );
