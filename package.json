@@ -11,8 +11,6 @@
     "lint": "prettier --check \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
-    "@emotion/core": "10.1.1",
-    "@emotion/styled": "10.0.27",
     "@fortawesome/free-solid-svg-icons": "5.15.1",
     "@fortawesome/react-fontawesome": "0.1.12",
     "latest": "0.2.0",
