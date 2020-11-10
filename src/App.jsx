@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="text-blue-900">Testing Snowpack!XX!!!</h1>
-        <Button text="Testing" type="submit" loading="false">
+        <Button text="Testing" type="submit" loading={true} color="black">
           Testing 123
         </Button>
       </header>
