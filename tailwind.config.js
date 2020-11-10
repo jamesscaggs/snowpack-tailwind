@@ -1,4 +1,4 @@
-const { colors, fontFamily } = require("tailwindcss/defaultTheme");
+const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
