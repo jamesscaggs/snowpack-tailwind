@@ -1,6 +1,5 @@
 export const ButtonType = {
-  primary:
-    "bg-indigo-dark hover:bg-indigo-lighter text-white font-bold rounded",
+  primary: "bg-indigo-600 hover:bg-indigo-300 text-white font-bold rounded",
   secondary: "bg-blue-500 hover:bg-blue-700 text-white font-bold rounded",
   basic: "bg-white hover:bg-gray-700 text-gray-700 font-bold rounded",
   delete: "bg-red-300 hover:bg-red-500 text-white font-bold rounded",

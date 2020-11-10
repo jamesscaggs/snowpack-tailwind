@@ -7,14 +7,6 @@ module.exports = {
   purge: ["src/**/*.js"],
   theme: {
     extend: {
-      colors: {
-        indigo: {
-          ...colors.indigo,
-          lighter: colors.indigo[100],
-          default: colors.indigo,
-          dark: "#202e78",
-        },
-      },
       fontFamily: {
         sans: ["Inter var", ...fontFamily.sans],
       },
